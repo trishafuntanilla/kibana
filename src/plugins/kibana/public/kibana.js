@@ -21,10 +21,10 @@ routes
 });
 
 chrome
-.setBrand({
-  'logo': 'url(' + kibanaLogoUrl + ') left no-repeat',
-  'smallLogo': 'url(' + kibanaLogoUrl + ') left no-repeat'
-})
+// .setBrand({
+//   'logo': 'url(' + kibanaLogoUrl + ') left no-repeat',
+//   'smallLogo': 'url(' + kibanaLogoUrl + ') left no-repeat'
+// })
 .setNavBackground('#222222')
 .setTabDefaults({
   resetWhenActive: true,

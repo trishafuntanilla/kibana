@@ -14,10 +14,10 @@ define(function (require) {
     $scope.buildSha = buildSha;
   });
 
-  registry.register(_.constant({
-    order: 1001,
-    name: 'about',
-    display: 'About',
-    url: '#/settings/about'
-  }));
+  // registry.register(_.constant({
+  //   order: 1001,
+  //   name: 'about',
+  //   display: 'About',
+  //   url: '#/settings/about'
+  // }));
 });
