@@ -16,6 +16,17 @@
         <span ng-if="!sectionName" class="kuiLocalTab">
           {{::section.display}}
         </span>
+        <span ng-if="!sectionName" class="kuiLocalTab">
+          <a
+            class="management-panel__link"
+            ng-class="{ 'management-panel__link--disabled': item.disabled || !item.url }"
+            kbn-href="./kibana#/discover"
+            tooltip="{{::item.tooltip}}"
+            tooltip-placement="bottom"
+            tooltip-popup-delay="400"
+            tooltip-append-to-body="1"
+          >Discover</a>
+        </span>
         <a
           ng-if="sectionName"
           ng-repeat="item in section.visibleItems"

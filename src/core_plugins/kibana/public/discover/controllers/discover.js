@@ -129,6 +129,11 @@ function discoverController($scope, config, courier, $route, $window, Notifier,
     description: 'Share Search',
     template: require('plugins/kibana/discover/partials/share_search.html'),
     testId: 'discoverShareButton',
+  }, {
+    key: 'Settings',
+    description: 'Settings',
+    run: function () { kbnUrl.change('/management'); },
+    testId: 'settingsButton',
   }];
   $scope.timefilter = timefilter;
 
