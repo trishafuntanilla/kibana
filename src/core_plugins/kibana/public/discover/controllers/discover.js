@@ -110,6 +110,11 @@ function discoverController($scope, config, courier, $route, $window, Notifier,
   };
 
   $scope.topNavMenu = [{
+    key: 'settings',
+    description: 'Settings',
+    run: function () { kbnUrl.change('/management'); },
+    testId: 'settingsButton',
+  }, {
     key: 'new',
     description: 'New Search',
     run: function () { kbnUrl.change('/discover'); },
@@ -129,11 +134,6 @@ function discoverController($scope, config, courier, $route, $window, Notifier,
     description: 'Share Search',
     template: require('plugins/kibana/discover/partials/share_search.html'),
     testId: 'discoverShareButton',
-  }, {
-    key: 'Settings',
-    description: 'Settings',
-    run: function () { kbnUrl.change('/management'); },
-    testId: 'settingsButton',
   }];
   $scope.timefilter = timefilter;
 
